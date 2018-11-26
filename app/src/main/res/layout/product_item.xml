@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:text="New"
+            android:textColor="#f57057"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/pro_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/offer"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sample" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pro_image"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="ipsom name"
+            android:textColor="#000"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:text="$ 2500,00"
+            android:textColor="#312f2f"
+            android:textSize="5pt" />
+
+        <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/buy"
+                android:layout_width="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_height="25dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/magnitude_circle"
+                android:padding="7dp"
+                android:src="@drawable/ic_cart" />
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="3dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/magnitude_circle"
+                android:padding="7dp"
+                android:src="@drawable/ic_heart_big" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="3dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/magnitude_circle"
+                android:padding="7dp"
+                android:src="@drawable/ic_rotate_big" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

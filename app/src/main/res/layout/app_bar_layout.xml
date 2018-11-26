@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_app_bar"
+    android:layout_width="match_parent"
+    android:elevation="2dp"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:theme="@style/Platform.ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/menu"
+            android:src="@drawable/ic_call" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/cart"
+            android:src="@drawable/ic_search_white" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_cart" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
